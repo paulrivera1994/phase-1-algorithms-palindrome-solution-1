@@ -1,5 +1,15 @@
+// Another longer solution for palindrome
+function reverse(word) {
+  const wordArray = word.split("");
+  const reverseWordArray = wordArray.reverse();
+  const combineWordArray = reverseWordArray.join("");
+  return combineWordArray;
+}
+
 function isPalindrome(word) {
   // Write your algorithm here
+  const reversedWord = reverse(word);
+  return word === reversedWord;
 }
 
 /* 
